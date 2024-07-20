@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.AbstractFactory;
+using DesignPatterns.Builder;
 using DesignPatterns.Factory;
 using DesignPatterns.Singleton;
 
@@ -14,8 +15,12 @@ public class Program
         //pizza.EatPizza();
 
         //AbstractFactory
-        AbWaiter waiter = new AbWaiter("nonveg");
-        IFood food = waiter.GetFood("pizza");
-        food.Eat();
+        //AbWaiter waiter = new AbWaiter("nonveg");
+        //IFood food = waiter.GetFood("pizza");
+        //food.Eat();
+
+        //Builder
+        Product product = shop.GetMobile();
+        product.GetFinalProduct();
     }
 }
